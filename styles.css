@@ -112,6 +112,17 @@ a:hover {
     text-align: center;
 }
 
+.education-content {
+    display: flex;
+    align-items: center;
+    gap: 1em; /* Adjust the gap between the logo and the text as needed */
+}
+
+.education-logo {
+    width: 85px; /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     header, nav, section {
