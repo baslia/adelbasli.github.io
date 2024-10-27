@@ -43,6 +43,10 @@ ul li {
 }
 
 a {
-    color: #4CAF50;
+    color: #1E90FF; /* DodgerBlue */
     text-decoration: none;
+}
+
+a:hover {
+    color: #104E8B; /* Darker shade of DodgerBlue */
 }
