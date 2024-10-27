@@ -30,12 +30,6 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Fix the section */
-    width: 100%; /* Ensure it spans the full width */
-    top: 0; /* Position it at the top */
-    z-index: 999; /* Ensure it stays above other content */
-    overflow-y: auto; /* Allow scrolling within the section */
-    height: 100vh; /* Full viewport height */
 }
 
 nav ul {
@@ -62,14 +56,6 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-}
-
-section {
-    padding: 2em;
-    margin: 1em 0;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
