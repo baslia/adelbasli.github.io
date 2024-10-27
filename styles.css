@@ -24,12 +24,15 @@ nav ul {
 
 nav ul li {
     margin: 0 1em;
+    background-color: black;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    display: block; /* Ensure the anchor tag takes the full height and width of the list item */
+    padding: 0.5em 1em;
 }
 
 nav ul li a:hover {
