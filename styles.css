@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 15em; /* Ensure the header doesn't overlap the content */
+    padding-top: 8em; /* Ensure the header doesn't overlap the content */
 }
 
 header {
@@ -12,10 +12,23 @@ header {
     color: white;
     padding: 1em 0;
     text-align: center;
-    position: fixed; /* Fix the header at the top */
     width: 100%; /* Ensure it spans the full width */
     top: 0; /* Position it at the top */
     z-index: 1000; /* Ensure it stays above other content */
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the section */
+    width: 100%; /* Ensure it spans the full width */
+    top: 0; /* Position it at the top */
+    z-index: 999; /* Ensure it stays above other content */
+    overflow-y: auto; /* Allow scrolling within the section */
+    height: 100vh; /* Full viewport height */
 }
 
 nav ul {
