@@ -104,9 +104,34 @@ a:hover {
     display: flex;
     justify-content: center;
     gap: 1em; /* Adjust the gap between badges as needed */
+    overflow-x: auto; /* Allow horizontal scrolling */
 }
 
 .badge {
     margin: 1em 0;
     text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header, nav, section {
+        padding: 1em;
+    }
+
+    nav {
+        display: none; /* Hide the navigation bar on small screens */
+    }
+
+    .badges-container {
+        flex-wrap: nowrap; /* Prevent wrapping of badges */
+    }
+
+    .profile-content {
+        flex-direction: column; /* Stack profile content vertically on small screens */
+        text-align: center;
+    }
+
+    .profile-content img {
+        margin: 0 auto 1em; /* Center the image and add margin below */
+    }
 }
