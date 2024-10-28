@@ -1,2 +1,2 @@
-# Adel Basli's personal website
+# Adel Basli's personal resume
 My website showcasing my projects and resume.
