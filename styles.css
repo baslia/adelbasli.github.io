@@ -16,6 +16,11 @@ header {
     z-index: 1000; /* Ensure it stays above other content */
 }
 
+header a:hover {
+    color: white; /* Change text color to white on hover */
+    text-decoration: underline;
+}
+
 nav {
     background-color: #005671; /* LightBlue */
     position: fixed; /* Fix the nav at the top */
