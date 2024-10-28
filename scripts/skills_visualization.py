@@ -28,6 +28,18 @@ data = {
     ]
 }
 
+data['Years of Experience'] = [
+    10, 4, 10, 2,  # Data Science
+    8, 5, 10,  # Programming Languages
+    8, 8, 8, 8,  # Machine Learning Libraries
+    3, 5, 1,  # Cloud Computing
+    8, 8, 8, 2, 10,  # Data Visualization Tools
+    2, 3, 3, 2,  # Big Data Technologies
+    8, 4, 8, 8, 5, 5,  # Software and Tools
+    5, 5, 5, 5, 5,  # Project Management
+    10, 10, 10, 10, 10, 10, 10, 10  # Soft Skills
+]
+
 # Create a DataFrame
 df = pd.DataFrame(data)
 
@@ -71,12 +83,21 @@ for label in sunburst_df['labels']:
         # Assign a lighter shade or a default color for sub-skills
         colors.append('lightblue')
 
+
+hover_text = ['Skills'] + \
+             [f"{cat} ({df[df['Category'] == cat]['Years of Experience'].max()} years)" for cat in df['Category'].unique()] + \
+             [f"{skill} ({exp} years)" for skill, exp in zip(df['Skill'], df['Years of Experience'])]
+
+#%%
+
 # Create the Sunburst Chart
 fig = go.Figure(go.Sunburst(
     labels=sunburst_df['labels'],
     parents=sunburst_df['parents'],
     marker=dict(colors=colors),
-    branchvalues="total"
+    branchvalues="total",
+    hovertext=hover_text,
+    hoverinfo="text"
 ))
 
 # Update layout for better appearance
