@@ -221,17 +221,34 @@
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Data Science: Machine Learning, Statistical Analysis, Predictive Modeling, Hypothesis Testing</li>
-            <li>Programming Languages: Python, R, SQL</li>
-            <li>Machine Learning Libraries: Scikit-learn, TensorFlow, PyTorch, Keras</li>
-            <li>Cloud Computing: AWS, Microsoft Azure, Google Cloud Platform (GCP)</li>
-            <li>Data Visualization Tools: Matplotlib, Seaborn, Tableau, Microsoft Power BI, Excel</li>
-            <li>Big Data Technologies: Hadoop, Apache Spark, Hive, Pig</li>
-            <li>Software and Tools: Jupyter Notebook, RStudio, Anaconda, Git, Jira, CircleCI</li>
-            <li>Project Management: Agile Methodologies, Scrum, Kanban, Jira, Microsoft Project</li>
-            <li>Soft Skills: Presentation, Planning, Organization, Creative Problem-Solving, Teamwork, Active Listening, Adaptability, Analytical Thinking</li>
+        <ul id="skills-list">
+        <li>Data Science: Machine Learning, Statistical Analysis, Predictive Modeling, Hypothesis Testing</li>
+        <li>Programming Languages: Python, R, SQL</li>
+        <li>Machine Learning Libraries: Scikit-learn, TensorFlow, PyTorch, Keras</li>
+        <li>Cloud Computing: AWS, Microsoft Azure, Google Cloud Platform (GCP)</li>
+        <li>Data Visualization Tools: Matplotlib, Seaborn, Tableau, Microsoft Power BI, Excel</li>
+        <li>Big Data Technologies: Hadoop, Apache Spark, Hive, Pig</li>
+        <li>Software and Tools: Jupyter Notebook, RStudio, Anaconda, Git, Jira, CircleCI</li>
+        <li>Project Management: Agile Methodologies, Scrum, Kanban, Jira, Microsoft Project</li>
+        <li>Soft Skills: Presentation, Planning, Organization, Creative Problem-Solving, Teamwork, Active Listening, Adaptability, Analytical Thinking</li>
         </ul>
+        <button id="toggle-button" onclick="toggleSkills()" style="font-size: 1.2em; padding: 0.5em 1em;">Show More</button>
+            <script>
+            function toggleSkills() {
+                const skillsList = document.getElementById('skills-list');
+                const toggleButton = document.getElementById('toggle-button');
+                if (skillsList.style.display === 'none' || skillsList.style.display === '') {
+                    skillsList.style.display = 'block';
+                    toggleButton.textContent = 'Show Less';
+                } else {
+                    skillsList.style.display = 'none';
+                    toggleButton.textContent = 'Show More';
+                }
+            }
+            document.addEventListener('DOMContentLoaded', () => {
+                document.getElementById('skills-list').style.display = 'none';
+            });
+            </script>
         <iframe src="skills_sunburst.html" width="100%" height="600px" style="border:none;"></iframe>
     </section>
     <section id="languages">
