@@ -151,3 +151,35 @@ a:hover {
         margin: 0 auto 1em; /* Center the image and add margin below */
     }
 }
+
+.modern-section {
+    padding: 2em;
+    margin: 1em 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.modern-section:hover {
+    transform: translateY(-5px);
+}
+
+.modern-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.modern-list li {
+    background: #e0e0e0;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.modern-list li:hover {
+    background-color: #d4d4d4;
+}
