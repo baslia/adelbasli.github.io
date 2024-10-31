@@ -183,3 +183,16 @@ a:hover {
 .modern-list li:hover {
     background-color: #d4d4d4;
 }
+
+#education-chart {
+    padding: 2em;
+    margin: 1em 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#educationChart {
+    max-width: 1000px;
+    max-height: 400px;
+}

@@ -13,6 +13,7 @@
       gtag('config', 'G-1GJSEYTQMY');
     </script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -230,6 +231,10 @@
     </div>
 </div>
 </section>
+    <section id="education-chart" class="modern-section">
+    <h2>Continuous Learning Classes</h2>
+    <canvas id="educationChart" width="1000" height="200"></canvas>
+</section>
     <section id="research">
         <h2>Academic Research Contribution</h2>
         <ul>
@@ -298,5 +303,56 @@
         <li>Technology</li>
     </ul>
     </section>
+<script>
+    const ctx = document.getElementById('educationChart').getContext('2d');
+    const educationChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Machine Learning', 'Emotional Intelligence', 'Gen AI', 'Communication', 'Project Management'],
+            datasets: [{
+                label: 'Relevant Courses',
+                data: [30, 30, 10, 20, 10], // Adjust the values as needed
+                backgroundColor: [
+                'rgba(0, 123, 255, 0.8)',  // Darker blue for Machine Learning (hard skill)
+                'rgba(255, 193, 7, 0.2)',  // Lighter yellow for Emotional Intelligence (soft skill)
+                'rgba(75, 192, 192, 0.8)', // Darker teal for Gen AI (hard skill)
+                'rgba(255, 109, 64, 0.2)', // Lighter orange for Communication (soft skill)
+                'rgba(153, 102, 255, 0.2)' // Lighter purple for Project Management (soft skill)
+                ],
+                borderColor: [
+                    'rgba(0, 123, 255, 1)',    // Darker blue for Machine Learning (hard skill)
+                    'rgba(255, 193, 7, 1)',    // Lighter yellow for Emotional Intelligence (soft skill)
+                    'rgba(75, 192, 192, 1)',   // Darker teal for Gen AI (hard skill)
+                    'rgba(255, 159, 64, 1)',   // Lighter orange for Communication (soft skill)
+                    'rgba(153, 102, 255, 1)'   // Lighter purple for Project Management (soft skill)
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed !== null) {
+                                label += context.parsed + '%';
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
 </body>
 </html>
