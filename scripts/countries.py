@@ -24,7 +24,7 @@ fig = px.scatter_geo(
     hover_name='City',
     hover_data={'Latitude': False, 'Longitude': False},
     color_continuous_scale=px.colors.sequential.Plasma,
-    title='Cities I Lived In and Duration'
+    # title='Cities I Lived In and Duration'
 )
 
 # Update layout for better appearance
