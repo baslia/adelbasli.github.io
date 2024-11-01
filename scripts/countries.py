@@ -6,7 +6,7 @@ import pandas as pd
 data = {
     'City': ['Paris', 'Strasbourg', 'Boston', 'Chicago', 'Munich', 'Newark'],
     'Country': ['France', 'France', 'USA', 'USA', 'Germany', 'USA'],
-    'Years': [6, 22, 0.5, 5, 1, 1.5],
+    'Years': [8, 20, 1, 5, 1, 1.5],
     'Latitude': [48.8566, 48.5734, 42.3601, 41.8781, 48.1351, 39.6837],
     'Longitude': [2.3522, 7.7521, -71.0589, -87.6298, 11.5820, -75.7497]
 }
