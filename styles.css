@@ -22,11 +22,14 @@ header a:hover {
 }
 
 nav {
-    background-color: #005671; /* LightBlue */
+    background-color: #005671; /* Same as header background color */
     position: fixed; /* Fix the nav at the top */
     width: 100%; /* Ensure it spans the full width */
     top: 0; /* Position it at the top */
     z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    height: 4em; /* Set the height of the nav */
 }
 
 section {
@@ -35,6 +38,7 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 2em;
 }
 
 nav ul {
@@ -42,14 +46,12 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #005671; /* LightBlue */
     margin: 0;
 }
 
-nav ul li {
-    margin: 0 0.5em;
-    background-color: black;
-}
+/*nav ul li {*/
+/*    margin: 0 0.5em;*/
+/*}*/
 
 nav ul li a {
     color: white;
@@ -57,9 +59,37 @@ nav ul li a {
     font-weight: bold;
     display: block; /* Ensure the anchor tag takes the full height and width of the list item */
     padding: 0.5em 1em;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
 }
 
+/*nav ul li a {*/
+/*    position: relative; !* Ensure the pseudo-element is positioned relative to the anchor *!*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*    display: block; !* Ensure the anchor tag takes the full height and width of the list item *!*/
+/*    padding: 0.5em 1em;*/
+/*    border-radius: 4px; !* Rounded corners *!*/
+/*    transition: background-color 0.3s; !* Smooth transition for background color *!*/
+/*    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); !* Gradient background *!*/
+/*}*/
+
+/*nav ul li a::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    background-color: #005671; !* Same as navbar background color *!*/
+/*    z-index: -1; !* Ensure it stays behind the anchor content *!*/
+/*    border-radius: 4px; !* Match the border radius *!*/
+/*}*/
+
 nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on hover */
     text-decoration: underline;
 }
 
@@ -200,7 +230,7 @@ a:hover {
 .big-button {
     font-size: 1em; /* Font size */
     padding: 0.5em 1em; /* Padding */
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient background */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Green background color */
     color: white; /* Text color */
     border: none; /* Remove border */
     border-radius: 8px; /* Rounded corners */
