@@ -243,14 +243,65 @@
             <li>Contributor, MIT, USA (2011) - <a href="https://arxiv.org/abs/1405.7764" target="_blank">Generalization Bounds for Learning with Linear, Polygonal, Quadratic and Conic Side Knowledge</a>.</li>
         </ul>
     </section>
-    <section id="articles">
-        <h2>Articles</h2>
-        <ul>
-            <li><a href="https://medium.com/p/7206507b4c2f" target="_blank">10 Actionable Trading Ideas for Beginners</a></li>
+<section id="articles">
+    <h2>Articles</h2>
+    <div>
+        <button class="big-button" onclick="toggleDropdown('genAI')">Gen AI</button>
+        <ul id="genAI" style="display: none;">
             <li><a href="https://medium.com/p/00b7f970c291" target="_blank">RASCEF: A Framework for Crafting Laser-Focused AI Prompts</a></li>
+            <li><a href="https://medium.com/p/2e7dac30658d" target="_blank">My Guide to Fine-Tuning Top_p and Temperature in LLMs</a></li>
+            <li><a href="https://medium.com/p/fe6dd1c2b86c" target="_blank">Prompt Injection Tactics: Hacking LLM Apps from the Inside Out</a></li>
+        </ul>
+    </div>
+    <div>
+        <button class="big-button" onclick="toggleDropdown('quantFinance')">Quantitative Finance</button>
+        <ul id="quantFinance" style="display: none;">
+            <li><a href="https://medium.com/p/7206507b4c2f" target="_blank">10 Actionable Trading Ideas for Beginners</a></li>
+            <li><a href="https://wire.insiderfinance.io/the-3-day-dip-that-predicts-market-moves-backed-by-python-4e7038056e9b" target="_blank">The 3-Day Dip That Predicts Market Moves (Backed by Python)</a></li>
+            <li><a href="https://medium.com/p/f85d30fd9b2d" target="_blank">Learning to Trade: A Deep Dive into Self-Reinforcement Learning for Stock Trading</a></li>
+        </ul>
+    </div>
+    <div>
+        <button class="big-button" onclick="toggleDropdown('nutrition')">Nutrition</button>
+        <ul id="nutrition" style="display: none;">
+            <li><a href="https://medium.com/p/6d8c8ccb5d37" target="_blank">Why the Nutri-Score Should Be Implemented in the United States</a></li>
+            <li><a href="https://medium.com/p/bd525e4e6d0d" target="_blank">The Optimal Macronutrients Ratio for Your Fitness Goals</a></li>
+            <li><a href="https://medium.com/p/54b0e0227ec6" target="_blank">How to Save Cheese: Why Italy Rejected Nutri-Score</a></li>
+        </ul>
+    </div>
+    <div>
+        <button class="big-button" onclick="toggleDropdown('leadership')">Leadership</button>
+        <ul id="leadership" style="display: none;">
+            <li><a href="https://medium.com/p/1ef0862b6949" target="_blank">Leading with Atomic Habits</a></li>
+            <li><a href="https://medium.com/p/76f2bfbcaa0c" target="_blank">My Secrets to Managing High-Performing Data Science and AI Teams</a></li>
+            <li><a href="https://medium.com/p/7faa5e69e65d" target="_blank">The Art of Asking Great Questions: Mastering the Pillars of Effective Inquiry</a></li>
+        </ul>
+    </div>
+    <div>
+        <button class="big-button" onclick="toggleDropdown('emotionalIntelligence')">Emotional Intelligence</button>
+        <ul id="emotionalIntelligence" style="display: none;">
+            <li><a href="https://medium.com/p/c174beb03ccf" target="_blank">Why Emotional Intelligence Matters More Than Ever</a></li>
             <li><a href="https://medium.com/p/60e22b61bd79" target="_blank">My Science-Backed Guide to Studying Smarter</a></li>
         </ul>
-    </section>
+    </div>
+    <div>
+        <button class="big-button" onclick="toggleDropdown('python')">Python</button>
+        <ul id="python" style="display: none;">
+            <li><a href="https://medium.com/p/00b7f970c291" target="_blank">RASCEF: A Framework for Crafting Laser-Focused AI Prompts</a></li>
+        </ul>
+    </div>
+</section>
+
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+            } else {
+                dropdown.style.display = 'none';
+            }
+        }
+    </script>
     <section id="skills">
         <h2>Skills</h2>
         <ul id="skills-list">
