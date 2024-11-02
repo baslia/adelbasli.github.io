@@ -64,17 +64,6 @@ nav ul li a {
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
 }
 
-/*nav ul li a {*/
-/*    position: relative; !* Ensure the pseudo-element is positioned relative to the anchor *!*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*    font-weight: bold;*/
-/*    display: block; !* Ensure the anchor tag takes the full height and width of the list item *!*/
-/*    padding: 0.5em 1em;*/
-/*    border-radius: 4px; !* Rounded corners *!*/
-/*    transition: background-color 0.3s; !* Smooth transition for background color *!*/
-/*    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); !* Gradient background *!*/
-/*}*/
 
 /*nav ul li a::before {*/
 /*    content: '';*/
