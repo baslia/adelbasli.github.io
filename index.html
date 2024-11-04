@@ -24,25 +24,21 @@
             <span id="phone-container" style="display:none;">
                 <img src="images/phone-call.png" alt="Phone" style="width:16px; height:16px; vertical-align:middle;"> +33 6 09 30 61 38
             </span>
-            <button id="reveal-phone-button" class="g-recaptcha"
-                data-sitekey="6LdYeHQqAAAAADYGzCOM0Dg6BgVYBR1HytRuOfgU"
-                data-callback='onPhoneSubmit'
-                data-action='submit'>
-              Reveal Phone Number
-            </button>
-            |
+            <span id="pipe" style="display:inline;">|</span>
             <span id="email-container" style="display:none;">
                 <a href="mailto:adel.basli@centraliens.net">
                     <img src="images/gmail.png" alt="Email" style="width:16px; height:16px; vertical-align:middle;"> Email Me
                 </a>
             </span>
-            <button id="reveal-email-button" class="g-recaptcha"
+            <button id="reveal-contacts-button" class="g-recaptcha"
                 data-sitekey="6LdYeHQqAAAAADYGzCOM0Dg6BgVYBR1HytRuOfgU"
-                data-callback='onEmailSubmit'
+                data-callback='onContactsSubmit'
                 data-action='submit'>
-              Reveal Email
+              Reveal Contacts
             </button>
-            |
+
+        </p>
+        <p>
             <a href="https://github.com/baslia">
                 <img src="images/github-sign.png" alt="GitHub" style="width:16px; height:16px; vertical-align:middle;"> GitHub
             </a> |
@@ -434,14 +430,11 @@
     });
 </script>
 <script>
-        function onPhoneSubmit(token) {
+        function onContactsSubmit(token) {
             document.getElementById('phone-container').style.display = 'inline';
-            document.getElementById('reveal-phone-button').style.display = 'none';
-        }
-
-        function onEmailSubmit(token) {
             document.getElementById('email-container').style.display = 'inline';
-            document.getElementById('reveal-email-button').style.display = 'none';
+            document.getElementById('reveal-contacts-button').style.display = 'none';
+            document.getElementById('pipe').style.display = 'inline';
         }
     </script>
 </body>
