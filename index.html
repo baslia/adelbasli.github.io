@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adel Basli's Resume</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GJSEYTQMY"></script>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdYeHQqAAAAADYGzCOM0Dg6BgVYBR1HytRuOfgU"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -20,10 +21,28 @@
         <h1>Adel Basli</h1>
         <p>Team Lead Data Science & AI</p>
         <p>
-            <img src="images/phone-call.png" alt="Phone" style="width:16px; height:16px; vertical-align:middle;"> +33 6 09 30 61 38 |
-            <a href="mailto:adel.basli@centraliens.net">
-                <img src="images/gmail.png" alt="Email" style="width:16px; height:16px; vertical-align:middle;"> Email Me
-            </a> |
+            <span id="phone-container" style="display:none;">
+                <img src="images/phone-call.png" alt="Phone" style="width:16px; height:16px; vertical-align:middle;"> +33 6 09 30 61 38
+            </span>
+            <button class="g-recaptcha"
+                data-sitekey="6LdYeHQqAAAAADYGzCOM0Dg6BgVYBR1HytRuOfgU"
+                data-callback='onPhoneSubmit'
+                data-action='submit'>
+              Reveal Phone Number
+            </button>
+            |
+            <span id="email-container" style="display:none;">
+                <a href="mailto:adel.basli@centraliens.net">
+                    <img src="images/gmail.png" alt="Email" style="width:16px; height:16px; vertical-align:middle;"> Email Me
+                </a>
+            </span>
+            <button class="g-recaptcha"
+                data-sitekey="6LdYeHQqAAAAADYGzCOM0Dg6BgVYBR1HytRuOfgU"
+                data-callback='onEmailSubmit'
+                data-action='submit'>
+              Reveal Email
+            </button>
+            |
             <a href="https://github.com/baslia">
                 <img src="images/github-sign.png" alt="GitHub" style="width:16px; height:16px; vertical-align:middle;"> GitHub
             </a> |
@@ -414,5 +433,14 @@
         }
     });
 </script>
+<script>
+        function onPhoneSubmit(token) {
+            document.getElementById('phone-container').style.display = 'inline';
+        }
+
+        function onEmailSubmit(token) {
+            document.getElementById('email-container').style.display = 'inline';
+        }
+    </script>
 </body>
 </html>
