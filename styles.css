@@ -238,3 +238,13 @@ a:hover {
     transform: translateY(0); /* Reset lift on click */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
 }
+
+.tag {
+    background-color: #6a11cb;
+    border-radius: 3px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 5px;
+    padding: 2px 5px;
+}
