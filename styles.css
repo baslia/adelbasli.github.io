@@ -265,3 +265,16 @@ a:hover {
     font-style: italic;
     color: #555;
 }
+
+#medium-stats {
+    width: 100%; /* Set the width to 100% */
+    max-width: 1000px; /* Set a maximum width to align with the rest of the page */
+    margin: 0 auto;
+    padding: 2em; /* Add padding as needed */
+}
+
+canvas {
+    width: 100%; /* Ensure the canvas scales with the container */
+    height: 600px; /* Set a fixed height for the canvas */
+    max-height: 300px; /* Prevent the canvas from growing too large */
+}
