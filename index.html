@@ -413,6 +413,37 @@
         </ul>
     </div>
     <div>
+        <button class="big-button" onclick="toggleDropdown('nutrition')">Nutrition</button>
+        <ul id="nutrition" style="display: none;">
+
+            <li>
+                <a href="https://medium.com/@adelbasli/hfss-vs-nutriscore-charting-a-path-towards-a-unified-global-nutrition-label-157aeff15f99"
+                   target="_blank">HFSS vs. Nutriscore: Charting a Path Towards a Unified Global Nutrition Label</a>
+            </li>
+            <li>
+                <a href="https://medium.com/nutritional-insights/the-fall-of-nutri-score-and-the-rise-of-open-food-facts-why-transparency-matters-more-than-ever-c104053537bc"
+                   target="_blank">The Fall of Nutri-Score and the Rise of Open Food Facts: Why Transparency Matters
+                    More Than Ever</a>
+            </li>
+            <li>
+                <a href="https://medium.com/pythoneers/calorie-counts-manufacturers-vs-science-with-open-food-facts-data-e14b3aaac2e6"
+                   target="_blank">Calorie Counts: Manufacturers vs. Science with Open Food Facts Data</a></li>
+            <li>
+                <a href="https://medium.com/@adelbasli/predicting-added-sugar-in-food-products-using-machine-learning-and-open-food-facts-data-3afb60daea00"
+                   target="_blank">Predicting Added Sugar in Food Products Using Machine Learning and Open Food Facts
+                    Data</a></li>
+            <li>
+                <a href="https://medium.com/@adelbasli/using-open-food-facts-data-to-verify-nutri-score-consistency-799056250f69"
+                   target="_blank">Using Open Food Facts Data to Verify Nutri-Score Consistency</a></li>
+            <li><a href="https://medium.com/p/6d8c8ccb5d37" target="_blank">Why the Nutri-Score Should Be Implemented in
+                the United States</a></li>
+            <li><a href="https://medium.com/p/bd525e4e6d0d" target="_blank">The Optimal Macronutrients Ratio for Your
+                Fitness Goals</a></li>
+            <li><a href="https://medium.com/p/54b0e0227ec6" target="_blank">How to Save Cheese: Why Italy Rejected
+                Nutri-Score</a></li>
+        </ul>
+    </div>
+    <div>
         <button class="big-button" onclick="toggleDropdown('quantFinance')">Quantitative Finance</button>
         <ul id="quantFinance" style="display: none;">
             <li>
@@ -432,27 +463,7 @@
                 Self-Reinforcement Learning for Stock Trading</a></li>
         </ul>
     </div>
-    <div>
-        <button class="big-button" onclick="toggleDropdown('nutrition')">Nutrition</button>
-        <ul id="nutrition" style="display: none;">
-            <li>
-                <a href="https://medium.com/pythoneers/calorie-counts-manufacturers-vs-science-with-open-food-facts-data-e14b3aaac2e6"
-                   target="_blank">Calorie Counts: Manufacturers vs. Science with Open Food Facts Data</a></li>
-            <li>
-                <a href="https://medium.com/@adelbasli/predicting-added-sugar-in-food-products-using-machine-learning-and-open-food-facts-data-3afb60daea00"
-                   target="_blank">Predicting Added Sugar in Food Products Using Machine Learning and Open Food Facts
-                    Data</a></li>
-            <li>
-                <a href="https://medium.com/@adelbasli/using-open-food-facts-data-to-verify-nutri-score-consistency-799056250f69"
-                   target="_blank">Using Open Food Facts Data to Verify Nutri-Score Consistency</a></li>
-            <li><a href="https://medium.com/p/6d8c8ccb5d37" target="_blank">Why the Nutri-Score Should Be Implemented in
-                the United States</a></li>
-            <li><a href="https://medium.com/p/bd525e4e6d0d" target="_blank">The Optimal Macronutrients Ratio for Your
-                Fitness Goals</a></li>
-            <li><a href="https://medium.com/p/54b0e0227ec6" target="_blank">How to Save Cheese: Why Italy Rejected
-                Nutri-Score</a></li>
-        </ul>
-    </div>
+
     <div>
         <button class="big-button" onclick="toggleDropdown('leadership')">Leadership</button>
         <ul id="leadership" style="display: none;">
@@ -627,11 +638,11 @@
    document.addEventListener('DOMContentLoaded', () => {
     const mediumData = {
         labels: ['July 2024', 'August 2024', 'September 2024', 'October 2024', 'November 2024', 'December 2024',
-         'January 2025', 'February 2025'],
+         'January 2025', 'February 2025', 'March 2025'],
         views: [395, 1000, 1100, 526, 1000, 1700,
-         1300, 1100],
+         1300, 1100, 1200],
         reads: [182, 624, 673, 275, 604, 1000,
-         779, 609]
+         779, 609, 695]
     };
 
     const ctx = document.getElementById('mediumChart').getContext('2d');
