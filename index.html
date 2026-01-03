@@ -18,6 +18,14 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+<div id="anagram-container">
+    <div class="anagram-wrapper">
+        <span class="letter" data-char="A">A</span>
+        <span class="letter" data-char="d">d</span>
+        <span class="letter" data-char="e">e</span>
+        <span class="letter" data-char="l">l</span>
+    </div>
+</div>
 <header>
     <h1>Adel Basli</h1>
     <p>Team Lead Data Science & AI</p>
@@ -824,5 +832,84 @@
         <footer>- Albert Einstein</footer>
     </blockquote>
 </section>
+
+<script>
+    // Animated Anagram: Adel <-> Lead
+    (function() {
+        const letters = document.querySelectorAll('.letter');
+        let isAdel = true;
+
+        // Initialize positions
+        letters.forEach((letter, index) => {
+            letter.setAttribute('data-position', index);
+        });
+
+        function animateAnagram() {
+            if (isAdel) {
+                // Transform "Adel" to "Lead"
+                // Adel: A(0), d(1), e(2), l(3)
+                // Lead: L(0), e(1), a(2), d(3)
+                // So: l→0, e→1, A→2, d→3
+
+                // Add moving class with delays
+                setTimeout(() => {
+                    letters[3].classList.add('moving'); // l (from pos 3 to pos 0)
+                    letters[3].setAttribute('data-position', '0');
+                }, 0);
+
+                setTimeout(() => {
+                    letters[2].classList.add('moving'); // e (from pos 2 to pos 1)
+                    letters[2].setAttribute('data-position', '1');
+                }, 200);
+
+                setTimeout(() => {
+                    letters[0].classList.add('moving'); // A (from pos 0 to pos 2)
+                    letters[0].setAttribute('data-position', '2');
+                }, 400);
+
+                setTimeout(() => {
+                    letters[1].classList.add('moving'); // d (from pos 1 to pos 3)
+                    letters[1].setAttribute('data-position', '3');
+                }, 600);
+
+            } else {
+                // Transform "Lead" back to "Adel"
+                // Current positions: l(0), e(1), A(2), d(3)
+                // Target: A(0), d(1), e(2), l(3)
+
+                setTimeout(() => {
+                    letters[0].classList.add('moving'); // A (from pos 2 to pos 0)
+                    letters[0].setAttribute('data-position', '0');
+                }, 0);
+
+                setTimeout(() => {
+                    letters[1].classList.add('moving'); // d (from pos 3 to pos 1)
+                    letters[1].setAttribute('data-position', '1');
+                }, 200);
+
+                setTimeout(() => {
+                    letters[2].classList.add('moving'); // e (from pos 1 to pos 2)
+                    letters[2].setAttribute('data-position', '2');
+                }, 400);
+
+                setTimeout(() => {
+                    letters[3].classList.add('moving'); // l (from pos 0 to pos 3)
+                    letters[3].setAttribute('data-position', '3');
+                }, 600);
+            }
+
+            // Remove moving class after animation completes
+            setTimeout(() => {
+                letters.forEach(letter => letter.classList.remove('moving'));
+            }, 1800);
+
+            isAdel = !isAdel;
+        }
+
+        // Start the animation loop
+        setTimeout(() => animateAnagram(), 1000); // Initial delay
+        setInterval(animateAnagram, 4000); // Change every 4 seconds
+    })();
+</script>
 </body>
 </html>
