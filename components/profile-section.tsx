@@ -12,7 +12,7 @@ export function ProfileSection() {
           alt="Adel Basli"
           width={300}
           height={300}
-          className="rounded-full mx-auto md:mx-0 flex-shrink-0"
+          className="rounded-full mx-auto md:mx-0 flex-shrink-0 h-auto"
         />
         <div className="flex flex-col gap-4">
           <p>
