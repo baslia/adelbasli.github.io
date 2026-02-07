@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            cursor: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            min-height: 200vh;
+        }
+
+        #canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 999999;
+        }
+
+        .content {
+            padding: 50px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #005671;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: #005671;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<div class="content">
+    <h1>Smoke Cursor Test</h1>
+
+    <div class="box">
+        <h2>Test Area 1</h2>
+        <p>Move your cursor around this area. You should see a smoke trail effect.</p>
+        <button>Click Me</button>
+    </div>
+
+    <div class="box">
+        <h2>Test Area 2</h2>
+        <p>Scroll down and move your cursor. The smoke effect should work everywhere on the page.</p>
+        <button>Another Button</button>
+    </div>
+
+    <div class="box">
+        <h2>Test Area 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+    </div>
+
+    <div class="box">
+        <h2>Test Area 4 (Bottom of page)</h2>
+        <p>If you're seeing this, scroll back up and test the cursor throughout the page.</p>
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Set canvas to cover entire viewport
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+
+    // Mouse tracking
+    let mouse = { x: -100, y: -100 };
+
+    document.addEventListener('mousemove', (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+    });
+
+    // Particle system
+    class Particle {
+        constructor(x, y) {
+            this.x = x + (Math.random() - 0.5) * 10;
+            this.y = y + (Math.random() - 0.5) * 10;
+            this.size = Math.random() * 20 + 10;
+            this.maxSize = this.size;
+            this.vx = (Math.random() - 0.5) * 2;
+            this.vy = (Math.random() - 0.5) * 2;
+            this.life = 1;
+        }
+
+        update() {
+            this.x += this.vx;
+            this.y += this.vy;
+            this.life -= 0.012;
+            this.size = this.maxSize * this.life;
+            this.vx += (Math.random() - 0.5) * 0.2;
+            this.vy += (Math.random() - 0.5) * 0.2;
+            this.vx *= 0.95;
+            this.vy *= 0.95;
+        }
+
+        draw() {
+            if (this.life <= 0) return;
+
+            const gradient = ctx.createRadialGradient(
+                this.x, this.y, 0,
+                this.x, this.y, this.size
+            );
+            gradient.addColorStop(0, `rgba(0, 86, 113, ${this.life * 0.6})`);
+            gradient.addColorStop(0.5, `rgba(0, 86, 113, ${this.life * 0.3})`);
+            gradient.addColorStop(1, 'rgba(0, 86, 113, 0)');
+
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        isDead() {
+            return this.life <= 0;
+        }
+    }
+
+    const particles = [];
+
+    // Animation loop
+    function animate() {
+        // Clear with transparency
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Add particles
+        if (mouse.x > 0 && mouse.y > 0) {
+            for (let i = 0; i < 5; i++) {
+                particles.push(new Particle(mouse.x, mouse.y));
+            }
+        }
+
+        // Update and draw particles
+        for (let i = particles.length - 1; i >= 0; i--) {
+            particles[i].update();
+            particles[i].draw();
+            if (particles[i].isDead()) {
+                particles.splice(i, 1);
+            }
+        }
+
+        // Draw cursor
+        if (mouse.x > 0 && mouse.y > 0) {
+            // Outer ring
+            ctx.strokeStyle = 'rgba(0, 86, 113, 0.8)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(mouse.x, mouse.y, 15, 0, Math.PI * 2);
+            ctx.stroke();
+
+            // Inner dot
+            ctx.fillStyle = '#005671';
+            ctx.beginPath();
+            ctx.arc(mouse.x, mouse.y, 4, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    console.log('Smoke cursor initialized');
+</script>
+</body>
+</html>
+
