@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adel Basli's Resume</title>
+    <title>Adel Basli — AI/ML Leader</title>
     <link rel="icon" href="images/ab_logo.png" type="image/x-icon">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GJSEYTQMY"></script>
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdYeHQqAAAAADYGzCOM0Dg6BgVYBR1HytRuOfgU"></script>
@@ -11,657 +11,534 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-1GJSEYTQMY');
     </script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-<div id="anagram-container">
-    <div class="anagram-wrapper">
-        <span class="letter" data-char="A">A</span>
-        <span class="letter" data-char="d">d</span>
-        <span class="letter" data-char="e">e</span>
-        <span class="letter" data-char="l">l</span>
-    </div>
-</div>
-<header>
-    <h1>Adel Basli</h1>
-    <p>Team Lead Data Science & AI</p>
-    <p>
-            <span id="phone-container" style="display:none;">
-                <img src="images/phone-call.png" alt="Phone" style="width:16px; height:16px; vertical-align:middle;"> +1 312-315-0909
-            </span>
-        <span id="pipe" style="display:none;">|</span>
-        <span id="email-container" style="display:none;">
-                <a href="mailto:adel.basli@centraliens.net">
-                    <img src="images/gmail.png" alt="Email" style="width:16px; height:16px; vertical-align:middle;"> Email Me
-                </a>
-            </span>
-        <button id="reveal-contacts-button" class="g-recaptcha"
-                data-sitekey="6LdYeHQqAAAAADYGzCOM0Dg6BgVYBR1HytRuOfgU"
-                data-callback='onContactsSubmit'
-                data-action='submit'>
-            Reveal Contacts
-        </button>
-    </p>
-    <p>
-        <a href="https://github.com/baslia">
-            <img src="images/github-sign.png" alt="GitHub" style="width:16px; height:16px; vertical-align:middle;">
-            GitHub
-        </a> |
-        <a href="https://www.linkedin.com/in/adelbasli">
-            <img src="images/linkedin.png" alt="LinkedIn" style="width:16px; height:16px; vertical-align:middle;">
-            LinkedIn
-        </a> |
-        <a href="https://medium.com/@adelbasli">
-            <img src="images/medium.png" alt="Medium" style="width:16px; height:16px; vertical-align:middle;"> My
-            Articles
-        </a>
-    </p>
-    <nav>
-        <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research</a></li>
+
+<!-- Fixed Navigation -->
+<nav id="main-nav">
+    <div class="nav-container">
+        <a href="#" class="nav-brand">AB</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#languages">Languages</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#open-source">Open Source</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#certifications">Certifications</a></li>
         </ul>
-    </nav>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Adel Basli</h1>
+            <p class="hero-title">Team Lead | Data Science & Generative AI</p>
+            <p class="hero-tagline">Scaling LLMs & Autonomous Agentic Workflows at Production Grade</p>
+            <div class="hero-links">
+                <span id="phone-container" style="display:none;">
+                    <a href="tel:+13123150909"><i class="fas fa-phone"></i> +1 (312) 315-0909</a>
+                </span>
+                <span id="email-container" style="display:none;">
+                    <a href="mailto:adel.basli@centraliens.net"><i class="fas fa-envelope"></i> Email</a>
+                </span>
+                <button id="reveal-contacts-button" class="btn btn-outline g-recaptcha"
+                        data-sitekey="6LdYeHQqAAAAADYGzCOM0Dg6BgVYBR1HytRuOfgU"
+                        data-callback='onContactsSubmit'
+                        data-action='submit'>
+                    <i class="fas fa-lock"></i> Reveal Contacts
+                </button>
+                <a href="https://github.com/baslia" class="btn btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/adelbasli" class="btn btn-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@adelbasli" class="btn btn-icon" aria-label="Medium"><i class="fab fa-medium"></i></a>
+            </div>
+            <p class="hero-auth"><i class="fas fa-check-circle"></i> US Green Card Holder &amp; EU Citizen — No sponsorship needed</p>
+        </div>
+        <div class="hero-image">
+            <img src="images/my_picture.jpeg" alt="Adel Basli">
+        </div>
+    </div>
 </header>
-<section id="github-summary" class="github-banner-section">
-    <img src="https://algora.io/og/user/baslia" alt="GitHub Summary" class="github-banner-img">
-</section>
-<section id="profile">
-    <h2>Profile</h2>
-    <div class="profile-content">
-        <img src="images/my_picture.jpeg" alt="Adel Basli">
-        <div class="profile-text">
-            <p>
-                I am a highly motivated and results-oriented data science leader with <strong> over 11 years of
-                experience </strong> in leveraging machine learning and AI to drive business value. Throughout my
-                career, I have focused on applying AI to improve <strong>health, wellness, and nutrition </strong>. Some
-                of my significant accomplishments include:
+
+<!-- About / Profile -->
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">Profile</h2>
+        <div class="about-content">
+            <p class="lead">
+                Strategic AI Leader with <strong>11+ years of experience</strong> specializing in scaling Large Language Models (LLMs) and autonomous agentic workflows. Proven track record directing international teams (25+ members) to deploy production-grade AI systems.
             </p>
-            <ul>
-                <li>Led automation initiatives that <strong>improved efficiency and reduced costs </strong> by millions
-                    of dollars
-                </li>
-                <li>Developed and deployed innovative machine learning models that <strong>increased revenue, reduced
-                    risks, and improved decision-making processes </strong></li>
-                <li><strong>Built and managed </strong> high-performing data science teams, fostering a collaborative
-                    and agile environment
-                </li>
-                <li>Possess a strong educational background in engineering and data science, with a Master's degree from
-                    <strong>Ecole Centrale Paris </strong>and experience at <strong>MIT Sloan School of
-                        Management </strong></li>
+            <p>
+                Expert in Foundation Model fine-tuning (SFT/RLHF/DPO), RAG architecture, and MLOps at scale. Deeply focused on bridging the gap between research and high-impact business automation.
+            </p>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <i class="fas fa-users"></i>
+                    <h4>25+ Engineers</h4>
+                    <p>Led across 3 cross-functional teams globally</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h4>$12MM+ Impact</h4>
+                    <p>Revenue generated via AutoML platform</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-robot"></i>
+                    <h4>82% Automation</h4>
+                    <p>Manual labeling replaced by agentic workflows</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-server"></i>
+                    <h4>60,000+ Models</h4>
+                    <p>Deployed to production globally</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Skills — FAANG-aligned -->
+<section id="skills" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> Generative AI & LLMs</h3>
+                <div class="skill-tags">
+                    <span class="tag">LLM Fine-tuning (RLHF/DPO/SFT)</span>
+                    <span class="tag">LoRA / QLoRA</span>
+                    <span class="tag">RAG Architecture</span>
+                    <span class="tag">Agentic Workflows</span>
+                    <span class="tag">LangGraph</span>
+                    <span class="tag">MCP</span>
+                    <span class="tag">Prompt Engineering</span>
+                    <span class="tag">Quantization (GGUF/FP8)</span>
+                    <span class="tag">Model Distillation</span>
+                    <span class="tag">LLM-as-a-Judge</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-microchip"></i> Foundation Models & Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="tag">Gemini 1.5 Pro</span>
+                    <span class="tag">Llama 3.x</span>
+                    <span class="tag">Claude 3.5</span>
+                    <span class="tag">GPT-4</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">JAX</span>
+                    <span class="tag">Hugging Face Transformers</span>
+                    <span class="tag">PyTorch FSDP</span>
+                    <span class="tag">DeepSpeed</span>
+                    <span class="tag">vLLM</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-cloud"></i> MLOps & Infrastructure</h3>
+                <div class="skill-tags">
+                    <span class="tag">Vertex AI</span>
+                    <span class="tag">AWS SageMaker</span>
+                    <span class="tag">MLflow</span>
+                    <span class="tag">Kubernetes (GKE)</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">Pinecone</span>
+                    <span class="tag">FAISS</span>
+                    <span class="tag">Elasticsearch</span>
+                    <span class="tag">Apache Spark</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming & Data</h3>
+                <div class="skill-tags">
+                    <span class="tag">Python (Expert)</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">BigQuery</span>
+                    <span class="tag">Snowflake</span>
+                    <span class="tag">Apache Spark</span>
+                    <span class="tag">Hive</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-shield-alt"></i> AI Safety & Evaluation</h3>
+                <div class="skill-tags">
+                    <span class="tag">Hallucination Detection</span>
+                    <span class="tag">Bias Auditing</span>
+                    <span class="tag">Differential Privacy</span>
+                    <span class="tag">Red Teaming</span>
+                    <span class="tag">Responsible AI</span>
+                    <span class="tag">Model Evaluation</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-project-diagram"></i> System Design & Leadership</h3>
+                <div class="skill-tags">
+                    <span class="tag">Distributed Systems</span>
+                    <span class="tag">Microservices</span>
+                    <span class="tag">Agile / Scrum</span>
+                    <span class="tag">Technical Roadmapping</span>
+                    <span class="tag">Cross-functional Leadership</span>
+                    <span class="tag">FinOps</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Professional Experience -->
+<section id="experience" class="section">
+    <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <div>
+                            <h3>Team Lead Data Science & AI — General Manager</h3>
+                            <p class="company"><a href="https://nielseniq.com/global/en/landing-page/label-insight/" target="_blank">NielsenIQ (Label Insight)</a> · Chicago, USA</p>
+                        </div>
+                        <span class="date">06/2025 — Present</span>
+                    </div>
+                    <ul class="job-details">
+                        <li>Directing the global AI function (3 cross-functional teams, 25+ associates) overseeing the lifecycle of autonomous data capture and labeling systems.</li>
+                        <li><strong>Responsible AI Evaluation:</strong> Architected an automated "LLM-as-a-Judge" framework for hallucination detection and bias auditing, ensuring 99.9% safety compliance across production agents.</li>
+                        <li><strong>Agentic Orchestration:</strong> Designed multi-agent workflows using LangGraph and MCP to automate 82% of manual labeling, improving processing speed by 35%.</li>
+                        <li><strong>Strategic Roadmap:</strong> Formulated a 3-year AI transformation plan resulting in a 65% improvement in automated data enrichment efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <div>
+                            <h3>Team Lead Data Science & AI — Functional Manager</h3>
+                            <p class="company"><a href="https://nielseniq.com/global/en/landing-page/label-insight/" target="_blank">NielsenIQ (Label Insight)</a> · Paris, France</p>
+                        </div>
+                        <span class="date">10/2023 — 05/2025</span>
+                    </div>
+                    <ul class="job-details">
+                        <li><strong>Data-Centric AI:</strong> Developed a synthetic data generation engine using LoRA-finetuned models to bootstrap training for low-resource categories, increasing model coverage by 45%.</li>
+                        <li><strong>Multimodal Search:</strong> Integrated a multimodal vector database (Pinecone) with CLIP-based embeddings, reducing search latency by 60% for product discovery.</li>
+                        <li><strong>Generative AI & Search:</strong> Developed outlier correction models using RAG and Elasticsearch, reducing manual oversight by 27%.</li>
+                        <li>Managed FinOps for cost-effective data science solutions, reducing operational costs by 20% while maintaining performance.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <div>
+                            <h3>Lead Data Scientist</h3>
+                            <p class="company"><a href="https://nielseniq.com/global/en/landing-page/label-insight/" target="_blank">NielsenIQ (Label Insight)</a> · Chicago, USA</p>
+                        </div>
+                        <span class="date">01/2023 — 10/2023</span>
+                    </div>
+                    <ul class="job-details">
+                        <li>Built an LLM-based classifier saving <strong>$3MM/year</strong> in data transformation costs by replacing legacy heuristics.</li>
+                        <li><strong>Edge Optimization:</strong> Led quantization (GGUF/FP8) and distillation of local models for on-premise deployment, ensuring high performance under strict data privacy constraints.</li>
+                        <li>Deployed scalable real-time data system on AWS, reducing processing time by 40%.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <div>
+                            <h3>Senior Machine Learning Engineer — R&D Lead</h3>
+                            <p class="company"><a href="https://nielseniq.com/global/en/" target="_blank">Nielsen IQ</a> · Chicago, USA</p>
+                        </div>
+                        <span class="date">01/2021 — 12/2022</span>
+                    </div>
+                    <ul class="job-details">
+                        <li><strong>Distributed Training:</strong> Optimized model training pipelines using PyTorch FSDP, reducing training time for 7B+ parameter models from weeks to days.</li>
+                        <li>Directed R&D on Transformer architectures, yielding a 5% gain in prediction accuracy.</li>
+                        <li>Built stacking ensembles automating predictive tool deployment for 9+ global server environments.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <div>
+                            <h3>Data Operations Transformation Lead</h3>
+                            <p class="company"><a href="https://www.nielsen.com" target="_blank">The Nielsen Company</a> · Chicago, USA</p>
+                        </div>
+                        <span class="date">01/2019 — 12/2020</span>
+                    </div>
+                    <ul class="job-details">
+                        <li>Developed an <strong>AutoML platform</strong> generating $12MM in incremental revenue and cost savings.</li>
+                        <li><strong>Privacy Engineering:</strong> Implemented Differential Privacy (DP) protocols for sensitive consumer datasets, maintaining model utility while meeting global compliance standards.</li>
+                        <li>Led the deployment of a portfolio containing 60,000+ production models globally.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <div>
+                            <h3>Senior Data Scientist</h3>
+                            <p class="company"><a href="https://www.nielsen.com" target="_blank">The Nielsen Company</a> · Paris, France</p>
+                        </div>
+                        <span class="date">01/2016 — 12/2018</span>
+                    </div>
+                    <ul class="job-details">
+                        <li>Leveraged MapReduce and Big Data ETL to reduce M&A integration timelines by 6 months.</li>
+                        <li>Deployed an unsupervised item coding system using fuzzy matching, generating $400,000 in additional revenue.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <div>
+                            <h3>Data Scientist</h3>
+                            <p class="company"><a href="https://www.airliquide.com" target="_blank">Air Liquide</a> · Newark, USA</p>
+                        </div>
+                        <span class="date">03/2014 — 12/2015</span>
+                    </div>
+                    <ul class="job-details">
+                        <li>Developed predictive tools for gas demand forecasting, reducing inventory costs by 15%.</li>
+                        <li>Created a process control tool using DTW clustering, saving $500,000 annually.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Open Source Projects -->
+<section id="open-source" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Selected Open Source & Community</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-apple-whole"></i></div>
+                <h3>Open Food Facts</h3>
+                <p class="project-role">Lead AI Contributor</p>
+                <ul>
+                    <li><strong>Vision-Language Pipeline:</strong> Architected a VLM-based OCR system to extract and validate nutritional facts from 3M+ product images, improving ingestion speed by 300%.</li>
+                    <li><strong>Nutri-Score Automation:</strong> Built a deep learning classifier to predict Nutri-Score categories from ingredient lists.</li>
+                </ul>
+                <a href="https://world.openfoodfacts.org" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Hackathon Judge & Winner</h3>
+                <p class="project-role">Community Leadership</p>
+                <ul>
+                    <li>Winner — French Government Food Data Hackathon (2024)</li>
+                    <li>Judge — Devpost, AiGoLearning, NextAI, Hackathon Raptors (2025)</li>
+                    <li>Trainer — EUROSAE: "The Renewal of Artificial Intelligence" (2024)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            <div class="edu-card">
+                <img src="images/ecole_centrale_paris_logo.png" alt="Ecole Centrale Paris" class="edu-logo">
+                <div class="edu-details">
+                    <h3>MSc in Engineering, Ingénieur Centralien</h3>
+                    <p class="edu-school"><a href="https://www.centralesupelec.fr/en" target="_blank">Ecole Centrale Paris</a> · Paris, France · 2009–2013</p>
+                    <p>Selective Grandes Écoles program. Focus on Quantitative Research, Machine Learning, and Applied Math.</p>
+                </div>
+            </div>
+            <div class="edu-card">
+                <img src="images/mit_logo.jpg" alt="MIT" class="edu-logo">
+                <div class="edu-details">
+                    <h3>Visiting Student</h3>
+                    <p class="edu-school"><a href="https://mitsloan.mit.edu/" target="_blank">MIT Sloan School of Management</a> · Cambridge, USA · 2011</p>
+                    <p>Research in Supervised Learning Generalization. Courses: AI, Statistical Learning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Publications -->
+<section id="publications" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Academic Research & Publications</h2>
+        <div class="publications-list">
+            <div class="pub-item">
+                <span class="pub-year">2011</span>
+                <div class="pub-details">
+                    <h4>Generalization Bounds for Learning with Linear and Quadratic Side Knowledge</h4>
+                    <p>Contributor · MIT · <a href="https://arxiv.org/abs/1405.7764" target="_blank">arXiv:1405.7764</a></p>
+                </div>
+            </div>
+            <div class="pub-item">
+                <span class="pub-year">2015</span>
+                <div class="pub-details">
+                    <h4>Batch Process Monitoring By Dynamic Time Warping and K-means Clustering</h4>
+                    <p>Author · <a href="https://www-test.aiche.org/conferences/aiche-annual-meeting/2015/proceeding/paper/244p-batch-process-monitoring-dynamic-time-warping-and-k-means-clustering" target="_blank">AIChE Annual Meeting</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" class="section">
+    <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certs-grid">
+            <div class="cert-card">
+                <i class="fab fa-aws"></i>
+                <h4>AWS ML Specialty</h4>
+                <p>Score: 910/1000</p>
+            </div>
+            <div class="cert-card">
+                <i class="fab fa-aws"></i>
+                <h4>AWS Solutions Architect</h4>
+                <p>Associate</p>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-tasks"></i>
+                <h4>CAPM</h4>
+                <p>PMI</p>
+            </div>
+        </div>
+        <div class="badges-container">
+            <div class="badge">
+                <div data-iframe-width="150" data-iframe-height="270"
+                     data-share-badge-id="4338baaa-9ea4-4839-8786-d737db2c70a5"
+                     data-share-badge-host="https://www.credly.com"></div>
+            </div>
+            <div class="badge">
+                <div data-iframe-width="150" data-iframe-height="270"
+                     data-share-badge-id="12087193-129b-429a-9a40-a88f66c148f0"
+                     data-share-badge-host="https://www.credly.com"></div>
+            </div>
+            <div class="badge">
+                <div data-iframe-width="150" data-iframe-height="270"
+                     data-share-badge-id="b3ad2da3-fcd0-4e2c-a98c-b653e2d164bf"
+                     data-share-badge-host="https://www.credly.com"></div>
+            </div>
+            <div class="badge">
+                <div data-iframe-width="150" data-iframe-height="270"
+                     data-share-badge-id="ac821b84-5d51-4d4b-8838-bb49fd69d44c"
+                     data-share-badge-host="https://www.credly.com"></div>
+            </div>
+            <div class="badge">
+                <div data-iframe-width="150" data-iframe-height="270"
+                     data-share-badge-id="23fd7864-1723-4182-a977-254d94522453"
+                     data-share-badge-host="https://www.credly.com"></div>
+            </div>
+            <div class="badge">
+                <div data-iframe-width="150" data-iframe-height="270"
+                     data-share-badge-id="1ba63d19-0727-43f4-89e1-8e2287395fcb"
+                     data-share-badge-host="https://www.credly.com"></div>
+            </div>
+        </div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    </div>
+</section>
+
+<!-- Articles -->
+<section id="articles" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Featured Articles</h2>
+        <div class="articles-buttons">
+            <button class="btn btn-pill" onclick="toggleDropdown('MLgenAI')">ML / Gen AI</button>
+            <button class="btn btn-pill" onclick="toggleDropdown('nutrition')">Nutrition</button>
+            <button class="btn btn-pill" onclick="toggleDropdown('quantFinance')">Quantitative Finance</button>
+            <button class="btn btn-pill" onclick="toggleDropdown('leadership')">Leadership</button>
+            <button class="btn btn-pill" onclick="toggleDropdown('python')">Python</button>
+        </div>
+        <div class="articles-lists">
+            <ul id="MLgenAI" class="article-list" style="display: none;">
+                <li><a href="https://medium.com/p/24598c36acbf" target="_blank">Image Background Removal without Training</a></li>
+                <li><a href="https://medium.com/@adelbasli/a-performance-showdown-of-low-cost-llms-gpt-4o-mini-gpt-4-1-nano-and-beyond-32f0d9e54f11" target="_blank">A Performance Showdown of Low-Cost LLMs</a></li>
+                <li><a href="https://medium.com/p/00b7f970c291" target="_blank">RASCEF: A Framework for Crafting Laser-Focused AI Prompts</a></li>
+                <li><a href="https://medium.com/p/2e7dac30658d" target="_blank">My Guide to Fine-Tuning Top_p and Temperature in LLMs</a></li>
+                <li><a href="https://medium.com/p/fe6dd1c2b86c" target="_blank">Prompt Injection Tactics: Hacking LLM Apps from the Inside Out</a></li>
             </ul>
-            <p>
-                <strong>Work Authorization:</strong> No sponsoring needed in the USA (Green Card holder) and EU (French
-                national).
-            </p>
-            <p>
-                In my current role as <strong>Team Lead Data Science & AI </strong> at Label Insight, I am responsible
-                for leading a team of data scientists in developing and deploying cutting-edge AI solutions to support
-                dietitians.
-            </p>
+            <ul id="nutrition" class="article-list" style="display: none;">
+                <li><a href="https://medium.com/@adelbasli/the-decades-late-ban-how-open-data-allows-consumers-to-bypass-regulatory-failure-9077ea486917" target="_blank">The Decades-Late Ban: How Open Data Allows Consumers to Bypass Regulatory Failure</a></li>
+                <li><a href="https://medium.com/@adelbasli/beyond-the-label-decoding-food-processing-with-nova-and-python-5ff12334d63e" target="_blank">Beyond the Label: Decoding Food Processing with NOVA and Python</a></li>
+                <li><a href="https://medium.com/@adelbasli/the-open-data-revolution-in-food-6686ebe4aa8e" target="_blank">The Open Data Revolution in Food</a></li>
+            </ul>
+            <ul id="quantFinance" class="article-list" style="display: none;">
+                <li><a href="https://medium.com/insiderfinance/10-paths-to-uncover-stock-market-inefficiencies-191cd8ffeada" target="_blank">10 Paths to Uncover Stock Market Inefficiencies</a></li>
+                <li><a href="https://medium.com/pythoneers/understanding-your-portfolio-a-guide-to-reading-and-interpreting-kpis-352d26099e2c" target="_blank">Understanding Your Portfolio: A Guide to Reading and Interpreting KPIs</a></li>
+                <li><a href="https://ai.gopubby.com/the-black-litterman-model-an-approach-to-portfolio-diversification-00c36c747042" target="_blank">The Black-Litterman Model: A smart integration of our market view</a></li>
+            </ul>
+            <ul id="leadership" class="article-list" style="display: none;">
+                <li><a href="https://medium.com/p/76f2bfbcaa0c" target="_blank">My Secrets to Managing High-Performing Data Science and AI Teams</a></li>
+                <li><a href="https://medium.com/p/1ef0862b6949" target="_blank">Leading with Atomic Habits</a></li>
+                <li><a href="https://medium.com/p/7faa5e69e65d" target="_blank">The Art of Asking Great Questions</a></li>
+            </ul>
+            <ul id="python" class="article-list" style="display: none;">
+                <li><a href="https://medium.com/@adelbasli/beyond-the-basics-10-powerful-pandas-tips-and-functions-that-will-transform-your-data-workflow-74e5c59d4c7f" target="_blank">Beyond the Basics: 10 Powerful Pandas Tips</a></li>
+                <li><a href="https://medium.com/@adelbasli/master-pycharm-like-a-pro-top-tips-for-boosting-your-productivity-20737ace4afa" target="_blank">Master PyCharm Like a Pro</a></li>
+                <li><a href="https://medium.com/@adelbasli/unlocking-deeper-insights-a-comprehensive-guide-to-causal-inference-with-python-fcc129874613" target="_blank">A Comprehensive Guide to Causal Inference with Python</a></li>
+            </ul>
         </div>
     </div>
 </section>
-<section id="expertise">
-    <h2>Areas of Expertise</h2>
-    <ul>
-        <li>Agile Project Management <span class="tag">Jira</span> <span class="tag">Scrum</span> <span class="tag">Kanban</span>
-            <span class="tag">Sprint Planning</span></li>
-        <li>Data Pipelines - ETL <span class="tag">Apache Spark</span> <span class="tag">Hadoop</span> <span
-                class="tag">Hive</span> <span class="tag">Elasticsearch</span> <span class="tag">Kafka</span></li>
-        <li>Team Leadership & Management <span class="tag">Mentoring</span> <span class="tag">Budget Management</span>
-            <span class="tag">Strategic Planning</span> <span class="tag">Team Building</span></li>
-        <li>Deep Learning <span class="tag">TensorFlow</span> <span class="tag">PyTorch</span> <span
-                class="tag">Keras</span> <span class="tag">Transformer Architectures</span> <span class="tag">CNN</span>
-            <span class="tag">LSTM</span></li>
-        <li>AI Agents & Orchestration - MCP <span class="tag">LangChain</span> <span class="tag">RAG</span> <span
-                class="tag">Prompt Engineering</span> <span class="tag">OpenAI GPT</span> <span
-                class="tag">Ollama</span> <span class="tag">LLM Fine-Tuning</span></li>
-        <li>CI/CD Pipelines <span class="tag">Docker</span> <span class="tag">Kubernetes</span> <span class="tag">CircleCI</span>
-            <span class="tag">Git</span></li>
-    </ul>
-    <h3>Cloud ML & AI Platforms</h3>
-    <ul>
-        <li>Amazon Web Services<span class="tag">AWS SageMaker</span> <span class="tag">AWS Lambda</span> <span
-                class="tag">EC2</span> <span class="tag">S3</span></li>
-        <li>Microsoft Azure<span class="tag">Azure ML</span> <span class="tag">Azure Cognitive Services</span> <span
-                class="tag">Azure OpenAI</span></li>
-        <li>Google Cloud Platform<span class="tag">Google Cloud ML</span> <span class="tag">Vertex AI</span> <span
-                class="tag">BigQuery</span></li>
-    </ul>
-</section>
-<section id="experience">
-    <h2>Professional Experience</h2>
 
-    <div class="job">
-        <h3>Team Lead Data Science & AI - General Manager, (<a
-                href="https://nielseniq.com/global/en/landing-page/label-insight/"
-                target="_blank">Label Insight</a>) Chicago, USA<span
-                class="tag">Nutrition</span></h3>
-        <p>06/2025 - present</p>
-        <ul>
-            <li>Managed the Data Science & AI function, directing three cross-functional teams in data capture,
-                attribution, and labeling, and overseeing 25+ associates across multiple international locations.
-            </li>
-            <li>Exercised complete authority over employment, professional development, and performance for a team of
-                senior data science professionals, in addition to comprehensive oversight of the departmental budget and
-                resource allocation.
-            </li>
-            <li>Formulated and directed the function's three-year strategic plan, driving critical AI initiatives that
-                enhanced competitive advantage and resulted in a 65% improvement in data processing automation and 35%
-                reduction in processing time.
-            </li>
-            <li>Architected and deployed autonomous AI Agents using LangChain and RAG to automate complex data enriching
-                and labeling workflows,
-                reducing manual intervention by 82%.
-            </li>
-
-
-        </ul>
-    </div>
-
-
-    <div class="job">
-        <h3>Team Lead Data Science & AI - Functional Manager, (<a
-                href="https://nielseniq.com/global/en/landing-page/label-insight/"
-                target="_blank">Label Insight</a>) Paris, France<span
-                class="tag">Nutrition</span></h3>
-        <p>10/2023 - 05/2025</p>
-        <ul>
-            <li>Led automation initiatives for maintaining over 27,000 product attributes and taxonomies by
-                collaborating with dietitians, food scientists, and chemists, achieving a 50% automation rate in 2024
-                and 80% in 2025.
-            </li>
-            <li>Managed cross-functional partnerships across three functional teams, comprising 25 associates, by
-                collaborating closely with data science and engineering teams and subject-matter experts to optimize
-                data foundation
-                systems.
-            </li>
-
-            <li>Led data science initiatives for Label Insight driving strategic projects that propelled data-based
-                decision-making processes, achieving a 35% increase in operational efficiency, reducing data processing
-                costs by 20%, and enhancing predictive analytics accuracy by 25%.
-            </li>
-            <li>Managed design and implementation of data science and deep learning systems, achieving a 35% improvement
-                in system efficiency and a 20% increase in data accuracy.
-            </li>
-            <li>Collaborated with engineers and product managers to establish data science goals and practices for a
-                5-person team, increasing team productivity by 25% and reducing delivery times by 15%.
-            </li>
-            <li>Led strategic code implementation for 50+ daily deployments, achieving a 30% increase in deployment
-                success rate.
-            </li>
-            <li>Managed financial operations (FinOps) for cost-effective data science solutions, reducing operational
-                costs by 20% while maintaining performance. Additionally, prioritized data initiatives based on ROI and
-                alignment with business goals.
-            </li>
-            <li>Developed and implemented an advanced outlier correction model utilizing GenAI, LangChain, and RAG
-                technologies, significantly enhancing data quality and reducing errors by 50%. Additionally, integrated
-                Elasticsearch to improve data accuracy, reducing manual decision-making by 27%.
-            </li>
-        </ul>
-    </div>
-    <div class="job">
-        <h3>Lead Data Scientist, (<a href="https://nielseniq.com/global/en/landing-page/label-insight/" target="_blank">Label
-            Insight</a>) Chicago, USA<span class="tag">Nutrition</span></h3>
-        <p>01/2023 - 10/2023</p>
-        <ul>
-            <li>Led Scrum ceremonies, promoting Agile methodologies.</li>
-            <li>Developed GenAI-based classifier with LLM, saving $3MM/yr in data transformation costs.</li>
-            <li>Deployed scalable real-time data system on AWS, reducing processing time by 40% and ensuring fault
-                tolerance.
-            </li>
-            <li>Used Amazon Personalize for real-time recommendations, increasing CTR by 30% and AOV by 25%.</li>
-            <li>Implemented innovative data science solutions such as RAG and prompt engineering within BAU processes,
-                leveraging generative AI technologies to optimize operations time and reduce delayed deliveries by 40%,
-                thereby driving strategic advancements.
-            </li>
-        </ul>
-    </div>
-    <div class="job">
-        <h3>Senior Machine Learning Engineer - R&D Lead, (<a href="https://nielseniq.com/global/en/" target="_blank">Nielsen
-            IQ</a>) Chicago, USA<span class="tag">Nutrition</span><span class="tag">Market Research</span></h3>
-        <p>01/2021 - 12/2022</p>
-        <ul>
-            <li>Led a team of 6 in supporting complex machine learning application rollout across 9 servers.</li>
-            <li>Implemented CI/CD in cloud migration, improving Mean Time to Repair (MTTR) by 80%.</li>
-            <li>Directed research on Transformer and LSTM algorithms, achieving 5% accuracy gain.</li>
-            <li>Optimized scalable NLP system with transformer architectures, improving language generation by 10%.</li>
-            <li>Built stacking ensemble combining machine learning and deep learning algorithms, improving accuracy by
-                14% and automating predictive tool deployment.
-            </li>
-        </ul>
-    </div>
-    <div class="job">
-        <h3>Data Operations Transformation Lead, (<a href="https://www.nielsen.com" target="_blank">The Nielsen
-            Company</a>) Chicago, USA<span class="tag">Nutrition</span><span class="tag">Market Research</span></h3>
-        <p>01/2019 - 12/2020</p>
-        <ul>
-            <li>Leveraged machine learning to optimize operations and drive innovation across a portfolio of 8 global
-                business units.
-            </li>
-            <li>Achieved $5 million cost reduction by replacing classifiers with Neural Networks, CNNs, and NLP.</li>
-            <li>Automated custom reports using Python, SQL, and Hive, reducing SLA by two days.</li>
-            <li>Developed autoML platform, generating $12 million in incremental revenue and cost savings.</li>
-            <li>Led research, development, and deployment efforts, building, enhancing, and pushing a portfolio of
-                60,000+ models to production.
-            </li>
-        </ul>
-    </div>
-    <div class="job">
-        <h3>Senior Data Scientist, (<a href="https://www.nielsen.com" target="_blank">The Nielsen Company</a>) Paris,
-            France<span class="tag">FMCG</span><span class="tag">Market Research</span></h3>
-        <p>01/2016 - 12/2018</p>
-        <ul>
-            <li>Developed machine learning models for customer segmentation, increasing customer retention by 8%.</li>
-            <li>Used MapReduce for Big Data processing and ETL, reducing M&A integration timeline by six months.</li>
-            <li>Deployed unsupervised item coding system using fuzzy matching, generating $400,000 in additional
-                revenue.
-            </li>
-            <li>Built production server for intensive algorithms, reducing computational costs by 30%.</li>
-            <li>Implemented web scraping and email content identification, reducing manual work by 75%.</li>
-        </ul>
-    </div>
-    <div class="job">
-        <h3>Data Scientist, (<a href="https://www.airliquide.com" target="_blank">Air Liquide</a>) Newark, USA<span
-                class="tag">Industry</span><span class="tag">Healthcare</span></h3>
-        <p>03/2014 - 12/2015</p>
-        <ul>
-            <li>Developed predictive tools for liquid gas demand forecasting, reducing inventory costs by 15%.</li>
-            <li>Created process control tool to ensure membrane fiber quality, saving $500,000 annually and increasing
-                efficiency by 18%.
-            </li>
-            <li>Used stochastic modeling to optimize risk/return ratios, increasing revenue by 10% and reducing
-                potential losses by 8%.
-            </li>
-        </ul>
-    </div>
-    <div class="job">
-        <h3>Actuary Intern, (<a href="https://www.axa.com" target="_blank">AXA France</a>) Paris, France<span
-                class="tag">Insurance</span></h3>
-        <p>06/2013 - 12/2013</p>
-        <ul>
-            <li>Led and executed key internal research projects, resulting in the development and deployment of a new
-                density function.
-            </li>
-            <li>Enhanced financial modeling accuracy, contributing to an improvement in regulatory reporting
-                standards.
-            </li>
-            <li>Collaborated with cross-functional teams to integrate data-driven methodologies, supporting 3 major
-                regulatory initiatives.
-            </li>
-        </ul>
-    </div>
-    <div class="job">
-        <h3>Business Controller Intern, (<a href="https://www.airbus.com/en" target="_blank">Airbus</a>) Munich, Germany<span
-                class="tag">Aerospace</span></h3>
-        <p>09/2011 - 08/2012</p>
-        <ul>
-            <li>Assisted in establishing target settings for key financial metrics over a five-year period.</li>
-            <li>Conducted comprehensive benchmarking and scenario analyses to evaluate internal financial performance,
-                identifying variances between forecasts and actual results.
-            </li>
-            <li>Leveraged VBA and FACTS+ to automate processes, enhance data accuracy, and streamline financial
-                reporting.
-            </li>
-        </ul>
-    </div>
-</section>
-<section id="certifications">
-    <h2>Online Courses & Certifications</h2>
-    <ul>
-        <li><a href="https://alison.com/course/diploma-in-human-nutrition-revised-2017" target="_blank">Diploma in Human
-            Nutrition </a>(Score: 93/100) (Nov. 2024) — Alison
-        </li>
-        <li><a href="https://aws.amazon.com/certification/certified-machine-learning-specialty/"
-               target="_blank">MLS-C01 </a>(AWS Certified Machine Learning - Specialty - Score: 910/1000) (Nov.
-            2023) — AWS
-        </li>
-        <li><a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank">SAA-C03 </a>(AWS
-            Solutions Architect Associate) (Oct. 2023) — AWS
-        </li>
-        <li><a href="https://aws.amazon.com/fr/certification/certified-cloud-practitioner/" target="_blank">CLF-C01 </a>(AWS
-            Certified Cloud Practitioner) (Aug. 2023) — AWS
-        </li>
-        <li><a href="https://www.pmi.org/certifications/certified-associate-capm" target="_blank">CAPM </a>(Certified
-            Associate in Project Management) (Jan. 2022) — PMI
-        </li>
-        <li>
-            <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification"
-               target="_blank">AZ-900 </a>(Microsoft Azure Fundamentals) (Dec. 2021) — Microsoft
-        </li>
-    </ul>
-    <div class="badges-container">
-        <div class="badge">
-            <div data-iframe-width="150" data-iframe-height="270"
-                 data-share-badge-id="4338baaa-9ea4-4839-8786-d737db2c70a5"
-                 data-share-badge-host="https://www.credly.com"></div>
-            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        </div>
-        <div class="badge">
-            <div data-iframe-width="150" data-iframe-height="270"
-                 data-share-badge-id="12087193-129b-429a-9a40-a88f66c148f0"
-                 data-share-badge-host="https://www.credly.com"></div>
-            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        </div>
-        <div class="badge">
-            <div data-iframe-width="150" data-iframe-height="270"
-                 data-share-badge-id="b3ad2da3-fcd0-4e2c-a98c-b653e2d164bf"
-                 data-share-badge-host="https://www.credly.com"></div>
-            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        </div>
-        <div class="badge">
-            <div data-iframe-width="150" data-iframe-height="270"
-                 data-share-badge-id="ac821b84-5d51-4d4b-8838-bb49fd69d44c"
-                 data-share-badge-host="https://www.credly.com"></div>
-            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        </div>
-        <div class="badge">
-            <div data-iframe-width="150" data-iframe-height="270"
-                 data-share-badge-id="23fd7864-1723-4182-a977-254d94522453"
-                 data-share-badge-host="https://www.credly.com"></div>
-            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        </div>
-        <div class="badge">
-            <div data-iframe-width="150" data-iframe-height="270"
-                 data-share-badge-id="1ba63d19-0727-43f4-89e1-8e2287395fcb"
-                 data-share-badge-host="https://www.credly.com"></div>
-            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        </div>
-    </div>
-</section>
-<section id="memberships">
-    <h2>Professional Memberships</h2>
-    <ul>
-        <li><a href="https://www.ieee.org" target="_blank">Senior Member, <strong>Institute of Electrical and
-            Electronics Engineers (IEEE)</strong></a></li>
-        <li><a href="https://afia.asso.fr" target="_blank">Member, <strong>Association Française pour l'Intelligence
-            Artificielle (AfIA)</strong></a></li>
-        <li><a href="https://repertoire.iesf.fr/#profile/7381c3ff9f28538b79cd37c2c5f216ad" target="_blank">Member,
-            <strong>Ingénieurs et Scientifiques de France (IESF)</strong></a></li>
-
-    </ul>
-</section>
-<section id="education">
-    <h2>Education</h2>
-    <div class="education">
-        <h3>MSc in Engineering, Ingénieur Centralien</h3>
-        <div class="education-content">
-            <img src="images/ecole_centrale_paris_logo.png" alt="Ecole Centrale Paris Logo" class="education-logo">
-            <div>
-                <p><strong><a href="https://www.centralesupelec.fr/en" target="_blank">Ecole Centrale Paris, Paris,
-                    France (2009-2013)</a></strong></p>
-                <p>Prestigious and selective Grandes Ecoles, with a primary focus on Computer Science, Quantitative
-                    Research and Applied Mathematics.</p>
-                <p>Relevant Courses: Data Mining & Machine Learning, Computer Vision & Image Recognition, Risk &
-                    Uncertainty Modeling, Optimization, Time Series Analysis & Forecasting.</p>
+<!-- Languages -->
+<section id="languages" class="section">
+    <div class="container">
+        <h2 class="section-title">Languages</h2>
+        <div class="languages-grid">
+            <div class="lang-card">
+                <img src="images/france.png" alt="French Flag" class="lang-flag">
+                <span>French <strong>[Native]</strong></span>
             </div>
-        </div>
-    </div>
-    <div class="education">
-        <h3>Visiting Student</h3>
-        <div class="education-content">
-            <img src="images/mit_logo.jpg" alt="MIT Logo" class="education-logo">
-            <div>
-                <p><strong><a href="https://mitsloan.mit.edu/" target="_blank">MIT SLOAN School of Management,
-                    Cambridge, USA (2011)</a></strong></p>
-                <p>Research: How different types of side knowledge can reduce the hypothesis space and improve the
-                    generalization performance of supervised learning algorithms.</p>
-                <p>Courses: Statistical Reasoning and Data Modeling, Statistical Learning and Data Mining, Statistical
-                    Inference in High-Dimensional Settings, Artificial Intelligence.</p>
+            <div class="lang-card">
+                <img src="images/united-kingdom.png" alt="UK Flag" class="lang-flag">
+                <span>English <strong>[Fluent]</strong></span>
             </div>
-        </div>
-    </div>
-    <div class="education">
-        <h3>Classes Prépa</h3>
-        <div class="education-content">
-            <img src="images/kleber_logo.png" alt="Classes Prépa Logo" class="education-logo">
-            <div>
-                <p><strong><a href="https://lycee-kleber.com.fr/cpge-scientifiques/" target="_blank">Lycée Kleber,
-                    Strasbourg, France (2006-2009)</a></strong></p>
-                <p>Specialization: Intensive preparation in Mathematics, Physics, and Engineering Sciences to qualify
-                    for entry into prestigious Grandes Écoles</p>
-                <p>Courses: Advanced Mathematics, Theoretical Physics, Engineering Sciences, Computer Science,
-                    Philosophy, Modern Languages.</p>
+            <div class="lang-card">
+                <img src="images/germany.png" alt="German Flag" class="lang-flag">
+                <span>German <strong>[Intermediate]</strong></span>
             </div>
         </div>
     </div>
 </section>
-<section id="education-chart" class="modern-section">
-    <h2>Continuous Learning Classes</h2>
-    <canvas id="educationChart" width="1000" height="200"></canvas>
-</section>
-<section id="research">
-    <h2>Academic Research & Open Source Contribution</h2>
-    <ul>
 
-        <li>Hackathon Judge, <a href="https://digitomize.com/hackathons/25639" target="_blank">
-            <strong>Devpost</strong></a>,
-            USA (2025) - <a href="https://northof0-open-ended.devpost.com" target="_blank">Batch 09
-                Hackathon</a>
-        </li>
-
-        <li>Hackathon Judge, <a href="https://aigolearning.org" target="_blank"> <strong>AiGoLearning</strong></a>,
-            France (2025) - <a href="https://aigolearning.org/futurehacks/index.html" target="_blank">Future Hacks 7
-                2025</a>
-        </li>
-
-        <li>Hackathon Judge, <strong>NextAI</strong>,
-            France (2025) - <a href="https://nextai-hack-students-only.devpost.com" target="_blank">Bugfix Hacks</a>
-        </li>
-
-        <li>Hackathon Judge, <a href="https://www.raptors.dev" target="_blank"> <strong> Hackathon Raptors</strong></a>,
-            France (2025) - <a href="http://browserbuddy.net" target="_blank">Smart Browser Extensions Hackathon</a>
-        </li>
-        <li>Hackathon Winner, <a
-                href="https://agriculture.gouv.fr/hackathon-donnees-alimentaires-les-laureats-de-la-premiere-edition"
-                target="_blank"> <strong>French Government</strong></a>, France (2024) - <a
-                href="https://www.numerique.gouv.fr/agenda/hackathon-donnees-alimentaires/" target="_blank">Food Data
-            Hackathon</a></li>
-        <li>Trainer, <strong>EUROSAE</strong>, France (2024) - <a href="https://www.eurosae.com/en/" target="_blank">The
-            renewal of artificial intelligence</a></li>
-        <li>AI Contributor, <strong>Open Food Facts</strong>, Remote (2018 - Now) - <a
-                href="https://world.openfoodfacts.org" target="_blank">Collaborative food products database</a></li>
-        <li>Author, <strong>AlChE</strong>, USA (2015) - <a
-                href="https://www-test.aiche.org/conferences/aiche-annual-meeting/2015/proceeding/paper/244p-batch-process-monitoring-dynamic-time-warping-and-k-means-clustering"
-                target="_blank">Batch Process Monitoring By Dynamic Time Warping and K-means Clustering</a>.
-        </li>
-        <li>Contributor, <strong>MIT</strong>, USA (2011) - <a href="https://arxiv.org/abs/1405.7764" target="_blank">Generalization
-            Bounds for Learning with Linear, Polygonal, Quadratic and Conic Side Knowledge</a>.
-        </li>
-    </ul>
-</section>
-<section id="articles">
-    <h2>Articles</h2>
-    <div>
-        <button class="big-button" onclick="toggleDropdown('MLgenAI')">ML/Gen AI</button>
-        <ul id="MLgenAI" style="display: none;">
-
-            <li>
-                <a href="https://medium.com/p/24598c36acbf"
-                   target="_blank">Image Background Removal without Training</a>
-            </li>
-
-            <li>
-                <a href="https://medium.com/@adelbasli/a-performance-showdown-of-low-cost-llms-gpt-4o-mini-gpt-4-1-nano-and-beyond-32f0d9e54f11"
-                   target="_blank">A Performance Showdown of Low-Cost LLMs (GPT-4o mini, GPT-4.1 nano, and Beyond)</a>
-            </li>
-            <li><a href="https://medium.com/p/00b7f970c291" target="_blank">RASCEF: A Framework for Crafting
-                Laser-Focused AI Prompts</a>
-            </li>
-            <li><a href="https://medium.com/p/2e7dac30658d" target="_blank">My Guide to Fine-Tuning Top_p and
-                Temperature in LLMs</a>
-            </li>
-            <li><a href="https://medium.com/p/fe6dd1c2b86c" target="_blank">Prompt Injection Tactics: Hacking LLM Apps
-                from the Inside Out</a>
-            </li>
-        </ul>
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2025 Adel Basli. Built with purpose.</p>
+        <div class="footer-links">
+            <a href="https://github.com/baslia" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adelbasli" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://medium.com/@adelbasli" aria-label="Medium"><i class="fab fa-medium"></i></a>
+        </div>
     </div>
-    <div>
-        <button class="big-button" onclick="toggleDropdown('nutrition')">Nutrition</button>
-        <ul id="nutrition" style="display: none;">
-
-
-            <li>
-                <a href="https://medium.com/@adelbasli/the-decades-late-ban-how-open-data-allows-consumers-to-bypass-regulatory-failure-9077ea486917"
-                   target="_blank">The Decades-Late Ban: How Open Data Allows Consumers to Bypass Regulatory Failure</a>
-            </li>
-
-            <li>
-                <a href="https://medium.com/@adelbasli/beyond-the-label-decoding-food-processing-with-nova-and-python-5ff12334d63e"
-                   target="_blank">Beyond the Label: Decoding Food Processing with NOVA and Python</a>
-            </li>
-            <li>
-                <a href="https://medium.com/@adelbasli/the-open-data-revolution-in-food-6686ebe4aa8e"
-                   target="_blank">The Open Data Revolution in Food</a>
-            </li>
-            <li>
-                <a href="https://medium.com/@adelbasli/the-invisible-ingredient-in-your-food-should-you-be-worried-about-hexane-c1ff80a76e9a"
-                   target="_blank">The “Invisible” Ingredient In Your Food: Should You Be Worried About Hexane?</a>
-            </li>
-            <li>
-                <a href="https://medium.com/@adelbasli/decoding-food-labels-comparing-nutri-score-hfss-and-guiding-stars-for-a-healthier-path-bb5ac219047d"
-                   target="_blank">Decoding Food Labels: Comparing Nutri-Score, HFSS, and Guiding Stars for a Healthier
-                    Path</a>
-            </li>
-            <li>
-                <a href="https://medium.com/@adelbasli/hfss-vs-nutriscore-charting-a-path-towards-a-unified-global-nutrition-label-157aeff15f99"
-                   target="_blank">HFSS vs. Nutriscore: Charting a Path Towards a Unified Global Nutrition Label</a>
-            </li>
-            <li>
-                <a href="https://medium.com/nutritional-insights/the-fall-of-nutri-score-and-the-rise-of-open-food-facts-why-transparency-matters-more-than-ever-c104053537bc"
-                   target="_blank">The Fall of Nutri-Score and the Rise of Open Food Facts: Why Transparency Matters
-                    More Than Ever</a>
-            </li>
-            <li>
-                <a href="https://medium.com/pythoneers/calorie-counts-manufacturers-vs-science-with-open-food-facts-data-e14b3aaac2e6"
-                   target="_blank">Calorie Counts: Manufacturers vs. Science with Open Food Facts Data</a>
-            </li>
-            <li>
-                <a href="https://medium.com/@adelbasli/predicting-added-sugar-in-food-products-using-machine-learning-and-open-food-facts-data-3afb60daea00"
-                   target="_blank">Predicting Added Sugar in Food Products Using Machine Learning and Open Food Facts
-                    Data</a>
-            </li>
-            <li>
-                <a href="https://medium.com/@adelbasli/using-open-food-facts-data-to-verify-nutri-score-consistency-799056250f69"
-                   target="_blank">Using Open Food Facts Data to Verify Nutri-Score Consistency</a>
-            </li>
-            <li><a href="https://medium.com/p/6d8c8ccb5d37" target="_blank">Why the Nutri-Score Should Be Implemented in
-                the United States</a>
-            </li>
-            <li><a href="https://medium.com/p/bd525e4e6d0d" target="_blank">The Optimal Macronutrients Ratio for Your
-                Fitness Goals</a>
-            </li>
-            <li><a href="https://medium.com/p/54b0e0227ec6" target="_blank">How to Save Cheese: Why Italy Rejected
-                Nutri-Score</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <button class="big-button" onclick="toggleDropdown('quantFinance')">Quantitative Finance</button>
-        <ul id="quantFinance" style="display: none;">
-
-            <li>
-                <a href="https://medium.com/insiderfinance/10-paths-to-uncover-stock-market-inefficiencies-191cd8ffeada"
-                   target="_blank">10 Paths to Uncover Stock Market Inefficiencies</a>
-            </li>
-            <li>
-                <a href="https://medium.com/pythoneers/understanding-your-portfolio-a-guide-to-reading-and-interpreting-kpis-352d26099e2c"
-                   target="_blank">Understanding Your Portfolio: A Guide to Reading and Interpreting KPIs</a>
-            </li>
-            <li>
-                <a href="https://ai.gopubby.com/the-black-litterman-model-an-approach-to-portfolio-diversification-00c36c747042"
-                   target="_blank">The Black-Litterman Model: A smart integration of our market view</a>
-            </li>
-            <li><a href="https://medium.com/p/c3c55c8386a8" target="_blank">Warren Buffett’s Stock-Picking Secrets: A
-                Python-Driven Approach</a>
-            </li>
-            <li><a href="https://medium.com/p/7206507b4c2f" target="_blank">10 Actionable Trading Ideas for
-                Beginners</a>
-            </li>
-            <li>
-                <a href="https://wire.insiderfinance.io/the-3-day-dip-that-predicts-market-moves-backed-by-python-4e7038056e9b"
-                   target="_blank">The 3-Day Dip That Predicts Market Moves (Backed by Python)</a>
-            </li>
-            <li><a href="https://medium.com/p/f85d30fd9b2d" target="_blank">Learning to Trade: A Deep Dive into
-                Self-Reinforcement Learning for Stock Trading</a>
-            </li>
-        </ul>
-    </div>
-
-    <div>
-        <button class="big-button" onclick="toggleDropdown('leadership')">Leadership</button>
-        <ul id="leadership" style="display: none;">
-            <li>
-                <a href="https://medium.com/@adelbasli/the-subtle-art-of-mark-manson-a-counterintuitive-guide-to-living-a-good-life-2fcffe65084f"
-                   target="_blank">The Subtle Art of Mark Manson: A Counterintuitive Guide to Living a Good Life</a>
-            </li>
-            <li><a href="https://medium.com/p/1ef0862b6949" target="_blank">Leading with Atomic Habits</a>
-            </li>
-            <li><a href="https://medium.com/p/76f2bfbcaa0c" target="_blank">My Secrets to Managing High-Performing Data
-                Science and AI Teams</a>
-            </li>
-            <li><a href="https://medium.com/p/7faa5e69e65d" target="_blank">The Art of Asking Great Questions: Mastering
-                the Pillars of Effective Inquiry</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <button class="big-button" onclick="toggleDropdown('emotionalIntelligence')">Emotional Intelligence</button>
-        <ul id="emotionalIntelligence" style="display: none;">
-
-            <li><a href="https://medium.com/p/5253e8be283e"
-                   target="_blank">Why You’ll Likely Break Your New Year’s Resolutions by January 9th (and How to Beat
-                the Odds)</a>
-            </li>
-
-            <li><a href="https://medium.com/@adelbasli/practical-strategies-to-overcome-overthinking-41389c8e626c"
-                   target="_blank">Practical Strategies to Overcome Overthinking</a>
-            </li>
-            <li><a href="https://medium.com/p/c174beb03ccf" target="_blank">Why Emotional Intelligence Matters More Than
-                Ever</a>
-            </li>
-            <li><a href="https://medium.com/p/60e22b61bd79" target="_blank">My Science-Backed Guide to Studying
-                Smarter</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <button class="big-button" onclick="toggleDropdown('python')">Python</button>
-        <ul id="python" style="display: none;">
-
-            <li>
-                <a href="https://medium.com/@adelbasli/beyond-the-basics-10-powerful-pandas-tips-and-functions-that-will-transform-your-data-workflow-74e5c59d4c7f"
-                   target="_blank">Beyond the Basics: 10 Powerful Pandas Tips and Functions That Will Transform Your
-                    Data Workflow</a>
-            </li>
-
-            <li>
-                <a href="https://medium.com/@adelbasli/master-pycharm-like-a-pro-top-tips-for-boosting-your-productivity-20737ace4afa"
-                   target="_blank">Master PyCharm Like a Pro: Top Tips for Boosting Your Productivity</a>
-            </li>
-            <li>
-                <a href="https://medium.com/@adelbasli/unlocking-deeper-insights-a-comprehensive-guide-to-causal-inference-with-python-fcc129874613"
-                   target="_blank">Unlocking Deeper Insights: A Comprehensive Guide to Causal Inference with Python</a>
-            </li>
-
-        </ul>
-    </div>
-</section>
-<section id="medium-stats" class="modern-section">
-    <h2>Articles Stats</h2>
-    <canvas id="mediumChart"></canvas>
-</section>
+</footer>
 
 <script>
     function toggleDropdown(id) {
@@ -672,292 +549,33 @@
             dropdown.style.display = 'none';
         }
     }
-</script>
-<section id="skills">
-    <h2>Skills</h2>
-    <ul id="skills-list">
-        <li>Data Science: Machine Learning, MCP, Agent, Statistical Analysis, Predictive Modeling, Hypothesis Testing
-        </li>
-        <li>Programming Languages: Python, R, SQL</li>
-        <li>Machine Learning Libraries: Scikit-learn, TensorFlow, PyTorch, Keras</li>
-        <li>Cloud Computing: AWS, Microsoft Azure, Google Cloud Platform (GCP)</li>
-        <li>Data Visualization Tools: Matplotlib, Seaborn, Tableau, Microsoft Power BI, Excel</li>
-        <li>Big Data Technologies: Hadoop, Apache Spark, Hive, Pig</li>
-        <li>Software and Tools: Jupyter Notebook, RStudio, Anaconda, Git, Jira, CircleCI</li>
-        <li>Project Management: Agile Methodologies, Scrum, Kanban, Jira, Microsoft Project</li>
-        <li>Soft Skills: Presentation, Planning, Organization, Creative Problem-Solving, Teamwork, Active Listening,
-            Adaptability, Analytical Thinking
-        </li>
-    </ul>
-    <button id="toggle-button" onclick="toggleSkills()" style="font-size: 1.2em; padding: 0.5em 1em;">Show More</button>
-    <script>
-        function toggleSkills() {
-            const skillsList = document.getElementById('skills-list');
-            const toggleButton = document.getElementById('toggle-button');
-            if (skillsList.style.display === 'none' || skillsList.style.display === '') {
-                skillsList.style.display = 'block';
-                toggleButton.textContent = 'Show Less';
-            } else {
-                skillsList.style.display = 'none';
-                toggleButton.textContent = 'Show More';
+
+    function onContactsSubmit(token) {
+        document.getElementById('phone-container').style.display = 'inline';
+        document.getElementById('email-container').style.display = 'inline';
+        document.getElementById('reveal-contacts-button').style.display = 'none';
+    }
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
-        }
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('skills-list').style.display = 'none';
         });
-    </script>
-    <iframe src="skills_sunburst.html" width="100%" height="600px" style="border:none;"></iframe>
-</section>
-<section id="languages">
-    <h2>Languages</h2>
-    <ul>
-        <li><img src="images/france.png" alt="French Flag" style="width:16px; height:16px; vertical-align:middle;">
-            French [Native]
-        </li>
-        <li><img src="images/united-kingdom.png" alt="UK Flag" style="width:16px; height:16px; vertical-align:middle;">
-            English [Fluent]
-        </li>
-        <li><img src="images/germany.png" alt="German Flag" style="width:16px; height:16px; vertical-align:middle;">
-            German [Intermediate] — Learning
-        </li>
-    </ul>
-</section>
+    });
 
-<section id="countries-lived">
-    <h2>Countries I Lived In</h2>
-    <iframe src="countries_lived.html" width="100%" height="600px" style="border:none;"></iframe>
-</section>
-
-<section id="hobbies" class="modern-section">
-    <h2>Hobbies</h2>
-    <ul class="modern-list">
-        <li>Badminton</li>
-        <li>Soccer</li>
-        <li>Cinema</li>
-        <li>Music</li>
-        <li>Running</li>
-        <li>Travel</li>
-        <li>Technology</li>
-    </ul>
-</section>
-<script>
-    const ctx = document.getElementById('educationChart').getContext('2d');
-    const educationChart = new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ['AI', 'Emotional Intelligence', 'Nutrition', 'Communication', 'Project Management'],
-            datasets: [{
-                label: 'Relevant Courses',
-                data: [30, 30, 10, 10, 20], // Adjust the values as needed
-                backgroundColor: [
-                'rgba(0, 123, 255, 0.8)',  // Darker blue for Machine Learning (hard skill)
-                'rgba(255, 193, 7, 0.2)',  // Lighter yellow for Emotional Intelligence (soft skill)
-                'rgba(75, 192, 192, 0.8)', // Darker teal for Gen AI (hard skill)
-                'rgba(255, 109, 64, 0.2)', // Lighter orange for Communication (soft skill)
-                'rgba(153, 102, 255, 0.2)' // Lighter purple for Project Management (soft skill)
-                ],
-                borderColor: [
-                    'rgba(0, 123, 255, 1)',    // Darker blue for Machine Learning (hard skill)
-                    'rgba(255, 193, 7, 1)',    // Lighter yellow for Emotional Intelligence (soft skill)
-                    'rgba(75, 192, 192, 1)',   // Darker teal for Gen AI (hard skill)
-                    'rgba(255, 109, 64, 1)',   // Lighter orange for Communication (soft skill)
-                    'rgba(153, 102, 255, 1)'   // Lighter purple for Project Management (soft skill)
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            plugins: {
-                legend: {
-                    position: 'top',
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            let label = context.label || '';
-                            if (label) {
-                                label += ': ';
-                            }
-                            if (context.parsed !== null) {
-                                label += context.parsed + '%';
-                            }
-                            return label;
-                        }
-                    }
-                }
-            }
+    // Nav scroll effect
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('main-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
         }
     });
-   function onContactsSubmit(token) {
-            document.getElementById('phone-container').style.display = 'inline';
-            document.getElementById('email-container').style.display = 'inline';
-            document.getElementById('reveal-contacts-button').style.display = 'none';
-            document.getElementById('pipe').style.display = 'inline';
-        }
-
-   document.addEventListener('DOMContentLoaded', () => {
-    const mediumData = {
-        labels: ['July 2024', 'August 2024', 'September 2024', 'October 2024', 'November 2024', 'December 2024',
-         'January 2025', 'February 2025', 'March 2025', 'April 2025', 'May 2025', 'June 2025', 'July 2025', 'August 2025',
-         'September 2025', 'October 2025', 'November 2025', 'December 2025', 'January 2026', 'February 2026'],
-        views: [395, 1000, 1100, 526, 1000, 1700,
-         1300, 1100, 1200, 1920, 1600, 1800, 2000, 2000,
-         1980, 2000, 1600, 1500, 1600, 1400],
-        reads: [182, 624, 673, 275, 604, 1000,
-         779, 609, 695, 1000, 910, 939, 1000, 1000,
-         991, 989, 760, 600, 558, 584]
-    };
-
-    const ctx = document.getElementById('mediumChart').getContext('2d');
-    const mediumChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: mediumData.labels,
-            datasets: [
-                {
-                    label: 'Views',
-                    data: mediumData.views,
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    fill: true,
-                    tension: 0.4
-                },
-                {
-                    label: 'Reads',
-                    data: mediumData.reads,
-                    borderColor: 'rgba(153, 102, 255, 1)',
-                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
-                    fill: true,
-                    tension: 0.4
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'top',
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            let label = context.dataset.label || '';
-                            if (label) {
-                                label += ': ';
-                            }
-                            if (context.parsed.y !== null) {
-                                label += context.parsed.y;
-                            }
-                            return label;
-                        }
-                    }
-                }
-            },
-            scales: {
-                x: {
-                    title: {
-                        display: true,
-                        text: 'Month'
-                    }
-                },
-                y: {
-                    title: {
-                        display: true,
-                        text: 'Count'
-                    }
-                }
-            }
-        }
-    });
-});
-</script>
-<section id="quote">
-    <blockquote>
-        <p>"Once you stop learning, you start dying."</p>
-        <footer>- Albert Einstein</footer>
-    </blockquote>
-</section>
-
-<script>
-    // Animated Anagram: Adel <-> Lead
-    (function() {
-        const letters = document.querySelectorAll('.letter');
-        let isAdel = true;
-
-        // Initialize positions
-        letters.forEach((letter, index) => {
-            letter.setAttribute('data-position', index);
-        });
-
-        function animateAnagram() {
-            if (isAdel) {
-                // Transform "Adel" to "Lead"
-                // Adel: A(0), d(1), e(2), l(3)
-                // Lead: L(0), e(1), a(2), d(3)
-                // So: l→0, e→1, A→2, d→3
-
-                // Add moving class with delays
-                setTimeout(() => {
-                    letters[3].classList.add('moving'); // l (from pos 3 to pos 0)
-                    letters[3].setAttribute('data-position', '0');
-                }, 0);
-
-                setTimeout(() => {
-                    letters[2].classList.add('moving'); // e (from pos 2 to pos 1)
-                    letters[2].setAttribute('data-position', '1');
-                }, 200);
-
-                setTimeout(() => {
-                    letters[0].classList.add('moving'); // A (from pos 0 to pos 2)
-                    letters[0].setAttribute('data-position', '2');
-                }, 400);
-
-                setTimeout(() => {
-                    letters[1].classList.add('moving'); // d (from pos 1 to pos 3)
-                    letters[1].setAttribute('data-position', '3');
-                }, 600);
-
-            } else {
-                // Transform "Lead" back to "Adel"
-                // Current positions: l(0), e(1), A(2), d(3)
-                // Target: A(0), d(1), e(2), l(3)
-
-                setTimeout(() => {
-                    letters[0].classList.add('moving'); // A (from pos 2 to pos 0)
-                    letters[0].setAttribute('data-position', '0');
-                }, 0);
-
-                setTimeout(() => {
-                    letters[1].classList.add('moving'); // d (from pos 3 to pos 1)
-                    letters[1].setAttribute('data-position', '1');
-                }, 200);
-
-                setTimeout(() => {
-                    letters[2].classList.add('moving'); // e (from pos 1 to pos 2)
-                    letters[2].setAttribute('data-position', '2');
-                }, 400);
-
-                setTimeout(() => {
-                    letters[3].classList.add('moving'); // l (from pos 0 to pos 3)
-                    letters[3].setAttribute('data-position', '3');
-                }, 600);
-            }
-
-            // Remove moving class after animation completes
-            setTimeout(() => {
-                letters.forEach(letter => letter.classList.remove('moving'));
-            }, 1800);
-
-            isAdel = !isAdel;
-        }
-
-        // Start the animation loop
-        setTimeout(() => animateAnagram(), 1000); // Initial delay
-        setInterval(animateAnagram, 4000); // Change every 4 seconds
-    })();
 </script>
 </body>
 </html>
